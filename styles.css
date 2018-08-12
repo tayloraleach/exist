@@ -1,0 +1,140 @@
+html {
+  overflow-y: hidden;
+}
+
+body {
+  background: #000;
+  font-family: monospace;
+}
+
+#hud {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#game,
+.game-wrapper {
+  position: relative;
+  display: block;
+  height: 100%;
+}
+
+#game {
+  z-index: 99;
+}
+
+#title {
+  text-align: center;
+  color: #888;
+  margin: 20px 0;
+  padding: 0;
+  opacity: 1;
+}
+
+#title h1 {
+  font-size: 36px;
+}
+
+#title p {
+  font-size: 16px;
+}
+
+#milestone-toast {
+  color: #888;
+  font-size: 3em;
+  display: block;
+  position: relative;
+  letter-spacing: 2px;
+  top: -400px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#controls,
+#controls-toast {
+  color: #888;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 20px;
+  opacity: 1;
+}
+
+#controls ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#controls ul li {
+  display: inline-block;
+}
+
+#pause-toast {
+  width: 150px;
+  height: 50px;
+  border: thin solid #888;
+  text-align: center;
+  display: block;
+  position: relative;
+  top: -90px;
+  margin: 0 auto;
+  opacity: 0;
+}
+
+#pause-text {
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-size: 14px;
+  top: 30%;
+}
+
+#canvas {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: block;
+}
+
+#gameOver {
+  display: none;
+  color: #ddd;
+  margin: auto;
+  text-align: center;
+  font-size: 4em;
+  opacity: 0.5;
+  letter-spacing: 5px;
+}
+
+#replayForm {
+  display: none;
+  text-align: center;
+  color: white;
+}
+
+.tryAgainButton {
+  color: #888;
+  margin: 40px;
+  border: 1px solid #888;
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, 0);
+}
+
+#time {
+  font-weight: 100;
+  opacity: .5;
+  color: #888;
+  position: fixed;
+  top: 0;
+  left: 25px;
+  z-index: 3;
+}
+
+#yourTime {
+  font-size: 1.5em;
+}

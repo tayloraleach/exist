@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EXiST - Taylor A. Leach</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="background.css">
+</head>
+
+<body>
+
+  <div class="game-wrapper">
+
+    <div id="stars"></div>
+    <div id="twinkle"></div>
+
+    <div id="game">
+
+      <div id="hud">
+        <div id="title">
+          <h1>ExIST</h1>
+        </div>
+        <div id="controls-toast">Avoid incoming asteroids. Survive as long as you can.</div>
+        <br>
+        <div id="controls">
+          Controls:
+          <ul>
+            <li></li>
+            <li>&#x21E7; Up</li>
+            <li>&#x21E9; Down</li>
+            <li>&#x21E6; Left</li>
+            <li>&#x21E8; Right</li>
+            <li>P = Pause</li>
+          </ul>
+          <small>* Currently no controls for touch screens.</small>
+        </div>
+
+        <div id="milestone-toast"></div>
+
+        <h1 id="gameOver">GAME OVER</h1>
+
+        <form id="replayForm" action="">
+          <!-- <input class="tryAgainButton" type="submit" value="Try Again!"> -->
+          <br/>
+          <label id="yourTime"></label>
+          <br><br>
+          Refresh To Play Again
+        </form>
+
+        <div id="pause-toast">
+          <span id="pause-text">P = Resume</span>
+        </div>
+      </div>
+
+      <canvas id="canvas"></canvas>
+
+      <h1 id="time"></h1>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
